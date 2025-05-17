@@ -31,7 +31,7 @@ An end-to-end **ETL pipeline and interactive Power BI dashboard** built using Py
 
 The entire ETL process is handled in one script:
 
-📄 [`retail_etl_pipeline.py`](etl/retail_etl_pipeline.py)
+📄 [`retail_etl_pipeline.py`](etl/Retail_Sales_ETL_Pipeline.py)
 
 ### Steps Included:
 
