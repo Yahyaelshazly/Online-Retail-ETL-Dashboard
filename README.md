@@ -3,7 +3,7 @@
 
 An end-to-end **ETL pipeline and interactive Power BI dashboard** built using Python, SQL Server, and Power BI — based on real-world e-commerce data.
 
-![Dashboard Screenshot](powerbi/dashboard_screenshot.png)
+![Dashboard Screenshot](powerbi/Screenshot 2025-05-17 211426.png)
 
 ---
 
