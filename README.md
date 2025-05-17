@@ -88,7 +88,7 @@ cd Online-Retail-ETL-Dashboard
 pip install -r requirements.txt
 
 ##3. Configure DB Connection
-Edit the load.py connection string with your SQL Server credentials.
+Edit the run_etl function with the path of your Data, connection_string and table_name with your SQL Server credentials.
 connection_string = "mssql+pyodbc://username:password@ServerName/DatabaseName?driver=ODBC+Driver+17+for+SQL+Server"
 
 ##4. Run ETL Pipeline
