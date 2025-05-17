@@ -1,1 +1,85 @@
-# Online-Retail-ETL-Dashboard
+# Data Engineering
+# 🛍️ Online Retail ETL & Sales Dashboard Project
+
+An end-to-end **ETL pipeline and interactive Power BI dashboard** built using Python, SQL Server, and Power BI — based on real-world e-commerce data.
+
+![Dashboard Screenshot](powerbi/dashboard_screenshot.png)
+
+---
+
+## 📦 Dataset
+
+- Source: [UCI Machine Learning Repository – Online Retail Dataset](https://archive.ics.uci.edu/ml/datasets/online+retail)
+- Transactions from a UK-based online retailer (2010–2011)
+- Includes: invoices, products, customers, quantity, country, etc.
+
+---
+
+## 🧰 Tech Stack
+
+- **Python** (ETL with `pandas`, `sqlalchemy`)
+- **SQL Server** (Data warehousing)
+- **Power BI** (Interactive dashboard)
+- **GitHub** (Version control & portfolio)
+- **Optional:** Docker, Cron for scheduling
+
+---
+
+---
+
+## 🔁 ETL Pipeline
+
+The entire ETL process is handled in one script:
+
+📄 [`retail_etl_pipeline.py`](etl/retail_etl_pipeline.py)
+
+### Steps Included:
+
+1. **Extract**: Load Excel file into pandas
+2. **Transform**:
+   - Remove null `CustomerID`
+   - Remove cancelled orders (`InvoiceNo` starts with 'C')
+   - Remove negative quantities
+   - Create new fields: `TotalPrice`, `Year`, `Month`
+3. **Load**: Write clean data to SQL Server using SQLAlchemy
+
+✅ Output Table: `OnlineRetail` in your SQL Server database
+
+---
+
+## ▶️ Run the ETL Script
+
+```bash
+python etl/retail_etl_pipeline.py
+
+
+---
+
+## 📊 Power BI Dashboard Design
+
+**Key Features:**
+- 💰 Total Revenue & Orders KPIs
+- 📈 Revenue trend by month & year
+- 🌍 Sales by Country (TreeMap)
+- 🏆 Top Selling Products
+- 🔎 Interactive filters: Country, Product, Year
+
+📷 Screenshot:
+![Sales Dashboard](powerbi/dashboard_screenshot.png)
+
+---
+
+## 🧠 Business Insights
+
+- Seasonal sales trends are highest in November and December.
+- Majority of sales are from the United Kingdom.
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/yourusername/Online-Retail-ETL-Dashboard.git
+cd Online-Retail-ETL-Dashboard
