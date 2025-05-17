@@ -82,3 +82,25 @@ python etl/retail_etl_pipeline.py
 ```bash
 git clone https://github.com/yourusername/Online-Retail-ETL-Dashboard.git
 cd Online-Retail-ETL-Dashboard
+
+##2. Install Requirements
+
+pip install -r requirements.txt
+
+##3. Configure DB Connection
+Edit the load.py connection string with your SQL Server credentials.
+connection_string = "mssql+pyodbc://username:password@ServerName/DatabaseName?driver=ODBC+Driver+17+for+SQL+Server"
+
+##4. Run ETL Pipeline
+
+python etl_pipeline/run_etl.py
+
+##5. Open Power BI
+Load data from SQL Server table OnlineRetail
+
+Import the .pbix file or recreate the dashboard using provided visuals
+
+🙋‍♂️ Author
+Yahya Elshazly
+🔗 www.linkedin.com/in/yahya-elshazly-24ab97113
+📬 yahyaelshazly96@gmail.com.com
