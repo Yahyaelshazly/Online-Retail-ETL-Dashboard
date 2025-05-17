@@ -48,8 +48,7 @@ def run_etl(file_path, connection_string, table_name):
 if __name__ == "__main__":
     # Use raw string (r) prefix or double backslashes for Windows file paths
     run_etl(
-        r"C:\Users\user\Downloads\Online_Retail.xlsx",
-        "mssql+pyodbc://Yahya/OnlineRetail?driver=ODBC+Driver+17+for+SQL+Server",
-        "OnlineRetail"
+        r"C:\your_Path_here\Online_Retail.xlsx",
+        "mssql+pyodbc://username:password@ServerName/DatabaseName?driver=ODBC+Driver+17+for+SQL+Server"
     )
 
