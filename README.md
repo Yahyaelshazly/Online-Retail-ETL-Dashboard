@@ -38,7 +38,6 @@ The entire ETL process is handled in one script:
 1. **Extract**: Load Excel file into pandas
 2. **Transform**:
    - Remove null `CustomerID`
-   - Remove cancelled orders (`InvoiceNo` starts with 'C')
    - Remove negative quantities
    - Create new fields: `TotalPrice`, `Year`, `Month`
 3. **Load**: Write clean data to SQL Server using SQLAlchemy
