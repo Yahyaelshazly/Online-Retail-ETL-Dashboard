@@ -21,7 +21,6 @@ An end-to-end **ETL pipeline and interactive Power BI dashboard** built using Py
 - **SQL Server** (Data warehousing)
 - **Power BI** (Interactive dashboard)
 - **GitHub** (Version control & portfolio)
-- **Optional:** Docker, Cron for scheduling
 
 ---
 
