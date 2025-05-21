@@ -47,11 +47,6 @@ The entire ETL process is handled in one script:
 
 ## ▶️ Run the ETL Script
 
-```bash
-python etl/retail_etl_pipeline.py
-
---
-
 ## 📊 Power BI Dashboard Design
 
 **Key Features:**
