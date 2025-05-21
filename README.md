@@ -50,8 +50,7 @@ The entire ETL process is handled in one script:
 ```bash
 python etl/retail_etl_pipeline.py
 
-
----
+--
 
 ## 📊 Power BI Dashboard Design
 
@@ -61,9 +60,6 @@ python etl/retail_etl_pipeline.py
 - 🌍 Sales by Country (TreeMap)
 - 🏆 Top Selling Products
 - 🔎 Interactive filters: Country, Product, Year
-
-📷 Screenshot:
-![Sales Dashboard](powerbi/dashboard_screenshot.png)
 
 ---
 
